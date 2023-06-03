@@ -221,6 +221,7 @@ dt.pubtitle {
   margin-bottom: 0.2rem;
 }
 .pubdata {
+	font-size: 12pt;
   width: max-content;
 }
 .pubitem {
