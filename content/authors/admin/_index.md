@@ -1,99 +1,84 @@
 ---
 # Display name
-title: 吳健雄
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+title: Jacob Penney
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
-
-# Status emoji
-status:
-  icon: ☕️
+first_name: Jacob
+last_name: Penney
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Graduate Research Assistant
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Northern Arizona University
+  # url: https://www.example.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: 'jacob_penney@nau.edu'
+    label: Email Me
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/mcauley-penney
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.linkedin.com/in/jacob-m-penney/
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+  - area: MSc Computer Science
+    institution: Northern Arizona University
+    date_start: 2023-08-15
+    date_end: 2024-12-13
+    summary: |2-
+      GPA: 3.6/4.0
 
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
+      - Human-Computer Interaction
+      - Networks
+      - Qualitative Methodology
+
+  - area: BS Applied Computer Science
+    institution: Northern Arizona University
+    date_start: 2019-08-15
+    date_end: 2023-05-13
+    summary: |2-
+      GPA: 3.42/4.0
+
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Data Structures
+      - Operating Systems
+      - Parallel Programming
+
+  - area: BA Comparative Cultural Studies
+    institution: Northern Arizona University
+    date_start: 2011-08-15
+    date_end: 2023-05-13
+    summary: |
+      GPA: 3.42/4.0
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
+  - position: Graduate Research Assistant
+    company_name: Northern Arizona University
+    date_start: 2023-05-13
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      - Won "Best Paper" for publication on stakeholder requirements for pedagogical LLM-based chatbots (see awards)
+      - Mentoring two student researchers on application development and research methodology
+      - Building and refactoring data pipeline stages for contribution to a publication on predicting the difficulty of solving open issues
+      - Most recently, researching for and developing a LLM-based chatbot for teaching computational thinking skills
+
+  - position: Undegraduate Research Assistant
+    company_name: Northern Arizona University
+    date_start: 2021-04-01
+    date_end: 2023-05-13
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Designed, developed, and optimized two data pipeline stages, and contributed to several more, for training machine learning models
+      - rebuilt an abandoned pipeline stage that had halted project progress for over a year
+      - Listed as a co-author on three publications for software I wrote or contributed to
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -102,16 +87,16 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
+        percent: 90
         icon: devicon/python
-      - name: RStudio
+      - name: React
         description: ''
-        percent: 100
-        icon: devicon/rstudio
-      - name: PyTorch
+        percent: 60
+        icon: devicon/react
+      - name: C
         description: ''
-        percent: 40
-        icon: devicon/pytorch
+        percent: 60
+        icon: devicon/c
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -129,44 +114,27 @@ skills:
         percent: 80
         icon: camera
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
+  - title: Best Paper
+    url: https://2023.conversations.ws/best-paper-award/
+    date: '2023-11-23'
+    awarder: Conversations 2023
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
+      I wrote and presented a paper on university computer science instructors' speculative expectations for future LLM-based conversational agents that are intended to teach computational thinking skills to university computer science students.
+
+  - title: Outstanding Senior in Applied Computer Science
+    date: '2023-05-13'
+    awarder: Northern Arizona University
     icon: edx
     summary: |
       Learned:
       - Synthesize your own blockchain solutions
       - Gain an in-depth understanding of the specific mechanics of Bitcoin
       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+I am currently a Computer Science graduate student and researcher at Northern Arizona University, working in the field of Human-Computer Interaction under Dr. Igor Steinmacher and Dr. Marco Gerosa. I research about how LLM-based conversational agents can be plied to teach computational thinking skills for introductory computer science students. I sometimes research with Dr. Fabio Santos of Grand Canyon University about how machine learning can be used to lower barriers to open source contribution.
