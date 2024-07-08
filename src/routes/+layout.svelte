@@ -1,20 +1,18 @@
-<script>
+<script lang="ts">
     import "../global.css";
-    import ThemeToggle from "../components/ThemeToggle.svelte";
+    import NavBar from "../components/Navbar.svelte";
+    import Hero from "../components/Hero.svelte";
+    import About from "../components/About.svelte";
+    import History from "../components/History.svelte";
 </script>
 
-<header>
-    <h1>My Website</h1>
-    <ThemeToggle />
-</header>
+<NavBar />
+<Hero />
+<About />
+<History />
 
 <main>
     <slot></slot>
-    <div class="bg-white dark:bg-gray-800 text-black dark:text-white">
-        <p>This content changes color based on the theme.</p>
-    </div>
 </main>
 
-<footer>
-    <p>© 2024 My Website</p>
-</footer>
+<footer></footer>
