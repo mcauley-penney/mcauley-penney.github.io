@@ -23,7 +23,7 @@
             <p class="description text-xl md:text-2xl mb-8">
                 I write software and research how humans interact with computers
             </p>
-            <div class="hero flex justify-center gap-x-3 mb-8">
+            <div class="hero flex justify-center gap-x-3">
                 {#each SOCIAL_MEDIA as media}
                     <a href={media.link} target="_blank" title={media.name}>
                         {#if $theme.current === "dark"}
@@ -47,7 +47,7 @@
         >
             <img
                 class="object-cover object-center transition ease-in-out duration-300 shadow-2xl shadow-color-primary/50"
-                alt="McAuley"
+                alt="McAuley through the lens of a ZWO ASI camera"
                 src="/src/assets/me_in_fits.png"
             />
         </div>

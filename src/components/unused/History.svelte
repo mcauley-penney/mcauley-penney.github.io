@@ -60,18 +60,20 @@
 </script>
 
 <div id="history" class="history relative isolate overflow-hidden">
-    <div class="mx-auto max-w-6xl px-6 lg:px-6">
-        <div class="py-16 section">
+    <div class="mx-auto max-w-5xl px-6 lg:px-8">
+        <div id="learning" class="py-16 md:py-32 section">
             <div
                 class="max-w-2xl md:inline-flex items-center gap-x-8 inter-font"
             >
                 <h1
-                    class="heading tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl"
+                    class="heading tracking-tight text-zinc-800
+                    dark:text-zinc-100 sm:text-4xl text-2xl"
                 >
                     History
                 </h1>
                 <div
-                    class="display: flex justify-content:space-between ml-4 md:flex-row gap-2 md:gap-0 justify-center items-center mt-6 md:mt-0"
+                    class="display: flex justify-content:space-between ml-4
+                md:flex-row gap-2 md:gap-0 justify-center items-center mt-6 md:mt-0"
                 >
                     <a
                         href="/src/assets/documents/jacob-penney_resume.pdf"
@@ -82,7 +84,6 @@
                         on:click={handleResumeClick}
                         aria-disabled={isResumeLoading}
                     >
-                        <!-- TODO: abstract out -->
                         {#if isResumeLoading}
                             <span class="spinner"></span>
                             Downloading...
@@ -92,26 +93,23 @@
                                     class="download-icon"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 32 32"
-                                >
-                                    <circle cx="16" cy="16" r="4" />
-                                    <path
+                                    ><circle cx="16" cy="16" r="4" /><path
                                         d="M30.94 15.66A16.69 16.69 0 0 0 16 5A16.69 16.69 0 0 0 1.06 15.66a1 1 0 0 0 0 .68A16.69 16.69 0 0 0 16 27a16.69 16.69 0 0 0 14.94-10.66a1 1 0 0 0 0-.68M16 22.5a6.5 6.5 0 1 1 6.5-6.5a6.51 6.51 0 0 1-6.5 6.5"
-                                    />
-                                </svg>
+                                    /></svg
+                                >
                                 <svg
                                     class="hover-icon"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
-                                >
-                                    <path
+                                    ><path
                                         fill="none"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
                                         stroke-width="1.5"
                                         d="M22 8s-4 6-10 6S2 8 2 8m13 5.5l1.5 2.5m3.5-5l2 2M2 13l2-2m5 2.5L7.5 16"
                                         color="black"
-                                    />
-                                </svg>
+                                    /></svg
+                                >
                             </div>
                             <span class="ml-2">Résumé</span>
                         {/if}
@@ -134,85 +132,90 @@
                                 class="download-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 32 32"
-                            >
-                                <circle cx="16" cy="16" r="4" />
-                                <path
+                                ><circle cx="16" cy="16" r="4" /><path
                                     d="M30.94 15.66A16.69 16.69 0 0 0 16 5A16.69 16.69 0 0 0 1.06 15.66a1 1 0 0 0 0 .68A16.69 16.69 0 0 0 16 27a16.69 16.69 0 0 0 14.94-10.66a1 1 0 0 0 0-.68M16 22.5a6.5 6.5 0 1 1 6.5-6.5a6.51 6.51 0 0 1-6.5 6.5"
-                                />
-                            </svg>
+                                /></svg
+                            >
                             <svg
                                 class="hover-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
-                            >
-                                <path
+                                ><path
                                     fill="none"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="1.5"
                                     d="M22 8s-4 6-10 6S2 8 2 8m13 5.5l1.5 2.5m3.5-5l2 2M2 13l2-2m5 2.5L7.5 16"
                                     color="black"
-                                />
-                            </svg>
+                                /></svg
+                            >
                             <span class="ml-2">Curriculum Vitae</span>
                         {/if}
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="timeline px-4">
-            {#each WORK as job}
-                <div class="mb-8 flex items-start relative">
-                    <div class="entry-icon text-zinc-500 dark:text-zinc-500">
-                        <MdiBusiness />
-                    </div>
-
-                    <div class="ml-16">
-                        <h3 class="text-lg font-semibold text-gray-200">
-                            {job.title}
-                        </h3>
-                        <h4
-                            class="text-base tracking-tight text-zinc-700 dark:text-zinc-300"
+            <div
+                class="mt-16 border-l border-zinc-200 pl-6 dark:border-zinc-700/50"
+            >
+                <div class="flex max-w-3xl flex-col space-y-16">
+                    {#each WORK as job}
+                        <article
+                            class="md:grid md:grid-cols-4 md:items-baseline"
                         >
-                            {job.company}
-                        </h4>
-                        <h5
-                            class="text-base tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
-                            style="font-size: 14px"
-                        >
-                            <MdiLocationOnOutline
-                                class="inline-block mr-2 mb-1"
-                            />
-                            {job.location}
-                        </h5>
-                        <p class="text-sm text-zinc-500 dark:text-zinc-500">
-                            <MdiCalendarBlank class="inline-block mr-2 mb-1" />
-                            {#if job.delta === null}
-                                {`${job.date[0]} - `}
-                                <span
-                                    class="latest-badge text-sm text-gray-200"
-                                >
-                                    Present
+                            <div
+                                class="relative z-10 order-first mb-3
+                                items-center text-sm text-zinc-400
+                                dark:text-zinc-600 mt-1"
+                            >
+                                <MdiCalendarBlank
+                                    class="inline-block mr-2 mb-1"
+                                />
+                                <span class="inline-block">
+                                    {`${job.date[0]} - ${job.date[1]}`}
                                 </span>
-                            {:else}
-                                {`${job.date[0]} - ${job.date[1]}`}
-                            {/if}
-                        </p>
-                        <p
-                            class="text-sm text-zinc-500 dark:text-zinc-500
-                            mb-6 ml-7"
-                        >
-                            {formatDate(job.date[0], job.date[1])}
-                        </p>
-                        <p
-                            class="text-gray-300 mb-8"
-                            style="white-space: pre-line; font-size: 16px;"
-                        >
-                            {job.description}
-                        </p>
-                    </div>
+                                <br />
+                                <span class="ml-7">
+                                    {formatDate(job.date[0], job.date[1])}
+                                </span>
+                            </div>
+                            <div
+                                class="group relative flex flex-col items-start md:col-span-3"
+                            >
+                                <div
+                                    class="text-base font-semibold tracking-tight
+                                    text-zinc-800 dark:text-zinc-100 md:text-lg text-sm"
+                                >
+                                    {job.title}
+                                </div>
+                                <div
+                                    class="text-base tracking-tight
+                                    text-zinc-700 dark:text-zinc-300 md:text-base text-xs"
+                                >
+                                    <MdiBusiness
+                                        class="inline-block mr-2 mb-1"
+                                    />
+                                    {job.company}
+                                </div>
+                                <div
+                                    class="text-base tracking-tight
+                                    text-zinc-500 dark:text-zinc-500 md:text-sm text-xs"
+                                >
+                                    <MdiLocationOnOutline
+                                        class="inline-block mr-3 mb-1"
+                                    />
+                                    {job.location}
+                                </div>
+                                <p
+                                    class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 md:text-base text-xs"
+                                    style="white-space: pre-line;"
+                                >
+                                    {job.description}
+                                </p>
+                            </div>
+                        </article>
+                    {/each}
                 </div>
-            {/each}
+            </div>
         </div>
     </div>
 </div>
@@ -222,34 +225,6 @@
 {/if}
 
 <style>
-    .timeline {
-        position: relative;
-    }
-
-    .timeline:before {
-        content: "";
-        position: absolute;
-        left: 2.25rem;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        background: var(--muted);
-    }
-
-    .entry-icon {
-        align-items: center;
-        background: var(--background);
-        border-radius: 50%;
-        display: flex;
-        height: 2.5rem;
-        justify-content: center;
-        left: 1.25rem;
-        position: absolute;
-        top: -0.5rem;
-        transform: translateX(-50%);
-        width: 2.5rem;
-    }
-
     .history {
         background: var(--background);
     }
@@ -369,49 +344,5 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         z-index: 1000;
-    }
-
-    .timeline {
-        position: relative;
-    }
-
-    .timeline:before {
-        content: "";
-        position: absolute;
-        left: 2.25rem;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        background: var(--muted);
-    }
-
-    .entry-icon {
-        position: absolute;
-        left: 1.25rem;
-        top: -0.4rem;
-        transform: translateX(-50%);
-        width: 2.5rem;
-        height: 2.5rem;
-        background: var(--background);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .inter-font {
-        font-family: "Inter", monospace;
-        font-optical-sizing: auto;
-        color: var(--foreground);
-    }
-
-    .latest-badge {
-        display: inline-block;
-        background: var(--secondary);
-        color: var;
-        padding: 1px 5px;
-        border-radius: 4px;
-        font-weight: 400;
-        margin-left: 2px;
     }
 </style>

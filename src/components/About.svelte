@@ -1,10 +1,10 @@
 <section id="about" class="container px-5 pt-20 mx-auto">
     <div class="flex flex-col lg:flex-row justify-between items-start gap-8">
-        <h2
-            class="heading text-xl tracking-tight sm:text-4xl inline-block py-1 px-2 mb-5 rounded"
+        <h1
+            class="heading text-2xl tracking-tight sm:text-4xl inline-block py-1 px-2 mb-5 rounded"
         >
             About Me
-        </h2>
+        </h1>
     </div>
     <div class="flex flex-col lg:flex-row gap-8">
         <p class="plain-text lg:w-1/3 leading-relaxed">
@@ -21,9 +21,9 @@
         </p>
         <p class="plain-text lg:w-1/3 leading-relaxed">
             I love programming and am interested in <span class="literal"
-                >embedded development, operating systems, text editors and IDEs,
-                graphics, telecommunications and navigation, and machine
-                learning</span
+                >embedded systems, operating systems, text editors and IDEs,
+                graphics, networks, telecommunications and navigation, and
+                machine learning</span
             >
             (the last of which I contribute to publications on). I aspire to contribute
             to software which helps other scientists, such as medical researchers,
