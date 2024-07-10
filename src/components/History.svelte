@@ -155,9 +155,11 @@
                     </a>
                 </div>
             </div>
+            <!--
             <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                 TODO: introduce work experience
             </p>
+            -->
             <div
                 class="mt-16 md:border-l md:border-zinc-200 md:pl-6 md:dark:border-zinc-700/50"
             >

@@ -29,6 +29,9 @@
     --secondary: #fbeecb;
     --shadow: #091e42;
 
+    --highlight-color: #d6c7c7;
+    --highlight-text-color: #002b36;
+
     --radius: 0.5rem;
   }
 
@@ -52,6 +55,9 @@
     --secondary-foreground: #697481;
     --secondary: #384049;
     --shadow: #c2cdda;
+
+    --highlight-color: #3e3c55;
+    --highlight-text-color: #c2cdda;
   }
 
   * {
@@ -64,5 +70,15 @@
     background-color: var(--background);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+  }
+
+  ::-moz-selection {
+    color: var(--highlight-text-color);
+    background: var(--highlight-color);
+  }
+
+  ::selection {
+    color: var(--highlight-text-color);
+    background: var(--highlight-color);
   }
 }

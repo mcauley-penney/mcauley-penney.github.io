@@ -22,12 +22,12 @@
         <p class="plain-text lg:w-1/3 leading-relaxed">
             I love programming and am interested in <span class="literal"
                 >embedded development, operating systems, text editors and IDEs,
-                graphics, and machine learning</span
+                graphics, telecommunications and navigation, and machine
+                learning</span
             >
             (the last of which I contribute to publications on). I aspire to contribute
             to software which helps other scientists, such as medical researchers,
-            astronomers, and climate scientists. The world runs on Open Source Software
-            🌏.
+            astronomers, and climate scientists.
         </p>
         <div class="lg:w-1/3">
             <h2
@@ -100,8 +100,7 @@
         font-size: 0.85em;
         font-weight: 500;
         line-height: 1.9;
-        margin-left: 2px;
-        margin-right: 2px;
+        margin-right: 1px;
         padding: 0.75px 5px;
     }
 
