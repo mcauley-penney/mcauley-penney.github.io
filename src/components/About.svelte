@@ -27,7 +27,7 @@
             >
             (the last of which I contribute to publications on). I aspire to contribute
             to software which helps other scientists, such as medical researchers,
-            astronomers, and climate scientists.
+            climate scientists, and astronomers.
         </p>
         <div class="lg:w-1/3">
             <h2
@@ -42,9 +42,9 @@
                     >
                         Interests
                     </h3>
-                    <p class="plain-text ml-6 mb-6">
+                    <p class="plain-text ml-6 mb-6" style="font-size: 12px;">
                         🦠 Medicine<br />
-                        🔭 Astronomy<br />
+                        📚 Etymology<br />
                         👟 Sports Science<br />
                         ✒️ Typesetting<br />
                         📜 History<br />
@@ -57,11 +57,11 @@
                     >
                         Likes
                     </h3>
-                    <p class="plain-text ml-6 mb-6">
+                    <p class="plain-text ml-6 mb-6" style="font-size: 12px;">
                         🌨️ Bleak weather<br />
                         💻 Hardware<br />
-                        🏋🏻 Weightlifting<br />
-                        ✈️ Travelling<br />
+                        🏋🏻 Strength Training<br />
+                        📖 Logophilia<br />
                         <span
                             style="display: inline-flex; align-items: center;"
                         >
