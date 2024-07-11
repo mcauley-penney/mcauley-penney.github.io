@@ -1,9 +1,17 @@
 <script lang="ts">
+    import { onMount } from "svelte";
     import { fade } from "svelte/transition";
     import { WORK } from "../data/content";
     import MdiCalendarBlank from "~icons/mdi/calendar-blank";
     import MdiBusiness from "~icons/mdi/business";
     import MdiLocationOnOutline from "~icons/mdi/location-on-outline";
+
+    import {
+        Accordion,
+        AccordionContent,
+        AccordionItem,
+        AccordionTrigger,
+    } from "$lib/components/ui/accordion/index.ts";
 
     function formatDate(start: string, end: string) {
         const startDate = start === null ? new Date() : new Date(start);
@@ -57,6 +65,17 @@
             showToast = false;
         }, 3000);
     }
+
+    let isMobile = false;
+
+    onMount(() => {
+        const handleResize = () => {
+            isMobile = window.innerWidth < 600;
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    });
 </script>
 
 <div id="history" class="history relative isolate overflow-hidden">
@@ -162,54 +181,68 @@
         </div>
         <div class="timeline px-4">
             {#each WORK as job}
-                <div class="mb-8 flex items-start relative">
-                    <div class="entry-icon text-zinc-500 dark:text-zinc-500">
+                <div class="mb-8 items-start relative">
+                    <div class="entry-icon">
                         <MdiBusiness />
                     </div>
-
                     <div class="ml-16">
-                        <h3 class="text-lg font-semibold text-gray-200">
-                            {job.title}
-                        </h3>
-                        <h4
-                            class="text-base tracking-tight text-zinc-700 dark:text-zinc-300"
-                        >
-                            {job.company}
-                        </h4>
-                        <h5
-                            class="text-base tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
-                            style="font-size: 14px"
-                        >
-                            <MdiLocationOnOutline
-                                class="inline-block mr-2 mb-1"
-                            />
-                            {job.location}
-                        </h5>
-                        <p class="text-sm text-zinc-500 dark:text-zinc-500">
-                            <MdiCalendarBlank class="inline-block mr-2 mb-1" />
-                            {#if job.delta === null}
-                                {`${job.date[0]} - `}
-                                <span
-                                    class="latest-badge text-sm text-gray-200"
+                        <Accordion value={isMobile ? [] : ["accordion"]}>
+                            <AccordionItem value="accordion">
+                                <AccordionTrigger
+                                    class="mt-1 text-md font-semibold text-zinc-700 dark:text-zinc-300"
+                                    >{job.title}
+                                </AccordionTrigger>
+                                <h4
+                                    class="text-base tracking-tight text-zinc-700 dark:text-zinc-300"
                                 >
-                                    Present
-                                </span>
-                            {:else}
-                                {`${job.date[0]} - ${job.date[1]}`}
-                            {/if}
-                        </p>
-                        <p
-                            class="text-sm text-zinc-500 dark:text-zinc-500
+                                    {job.company}
+                                </h4>
+                                <h5
+                                    class="text-base tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
+                                    style="font-size: 14px"
+                                >
+                                    <MdiLocationOnOutline
+                                        class="inline-block mr-2 mb-1"
+                                    />
+                                    {job.location}
+                                </h5>
+
+                                <p
+                                    class="text-sm text-zinc-500 dark:text-zinc-500"
+                                >
+                                    <MdiCalendarBlank
+                                        class="inline-block mr-2 mb-1"
+                                    />
+                                    {#if job.delta === null}
+                                        {`${job.date[0]} - `}
+                                        <span
+                                            class="latest-badge text-sm text-zinc-700 dark:text-zinc-300"
+                                        >
+                                            Present
+                                        </span>
+                                    {:else}
+                                        {`${job.date[0]} - ${job.date[1]}`}
+                                    {/if}
+                                </p>
+                                <p
+                                    class="text-sm text-zinc-500 dark:text-zinc-500
                             mb-6 ml-7"
-                        >
-                            {formatDate(job.date[0], job.date[1])}
-                        </p>
-                        <p
-                            class="text-gray-300 mb-8"
-                            style="white-space: pre-line; font-size: 16px;"
-                        >
-                            {job.description}
-                        </p>
+                                >
+                                    {formatDate(job.date[0], job.date[1])}
+                                </p>
+                                <AccordionContent
+                                    class="text-base tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
+                                    style="font-size: 14px"
+                                >
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 mb-8"
+                                        style="white-space: pre-line; font-size: 16px;"
+                                    >
+                                        {job.description}
+                                    </p>
+                                </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
                     </div>
                 </div>
             {/each}
@@ -222,34 +255,6 @@
 {/if}
 
 <style>
-    .timeline {
-        position: relative;
-    }
-
-    .timeline:before {
-        content: "";
-        position: absolute;
-        left: 2.25rem;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        background: var(--muted);
-    }
-
-    .entry-icon {
-        align-items: center;
-        background: var(--background);
-        border-radius: 50%;
-        display: flex;
-        height: 2.5rem;
-        justify-content: center;
-        left: 1.25rem;
-        position: absolute;
-        top: -0.5rem;
-        transform: translateX(-50%);
-        width: 2.5rem;
-    }
-
     .history {
         background: var(--background);
     }
@@ -397,6 +402,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        color: var(--secondary-foreground);
     }
 
     .inter-font {

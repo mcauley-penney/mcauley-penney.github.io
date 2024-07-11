@@ -63,6 +63,7 @@
   * {
     @apply border-border;
     scroll-behavior: smooth;
+    border: none;
   }
 
   body {
