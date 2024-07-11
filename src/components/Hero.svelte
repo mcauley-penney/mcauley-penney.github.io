@@ -47,7 +47,7 @@
         >
             <img
                 class="object-cover object-center transition ease-in-out duration-300 shadow-2xl shadow-color-primary/50"
-                alt="McAuley through the lens of a ZWO ASI camera"
+                alt="McAuley through a ZWO ASI camera, Spring 2023"
                 src="/src/assets/me_in_fits.png"
             />
         </div>
