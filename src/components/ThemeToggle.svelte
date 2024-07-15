@@ -1,6 +1,6 @@
 <script>
     import { onDestroy } from "svelte";
-    import { theme } from "../stores/theme";
+    import { theme } from "$src/stores/theme";
     import { BROWSER } from "esm-env";
     import { Label } from "$lib/components/ui/label/index.ts";
     import { Switch } from "$lib/components/ui/switch/index.ts";

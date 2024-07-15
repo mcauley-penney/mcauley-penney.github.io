@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { NAV_LINKS } from "../data/content";
-    import ThemeToggle from "../components/ThemeToggle.svelte";
+    import { NAV_LINKS } from "$src/data/content";
+    import ThemeToggle from "$src/components/ThemeToggle.svelte";
     import PhList from "~icons/ph/list";
     import PhX from "~icons/ph/x";
 

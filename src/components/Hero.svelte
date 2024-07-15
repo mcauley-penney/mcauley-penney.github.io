@@ -1,6 +1,7 @@
 <script>
-    import { SOCIAL_MEDIA } from "../data/content";
-    import { theme } from "../stores/theme.js";
+    import { base } from "$app/paths";
+    import { SOCIAL_MEDIA } from "$src/data/content";
+    import { theme } from "$src/stores/theme.js";
 
     let hoverColor = "lightgray";
     $: {
@@ -43,7 +44,7 @@
         <img
             class="object-cover object-center transition ease-in-out duration-300 shadow-2xl shadow-color-primary/50"
             alt="McAuley through a ZWO ASI camera, Spring 2023"
-            src="/src/assets/me_in_fits.png"
+            src="{base}/me_in_fits.png"
         />
     </div>
 </section>

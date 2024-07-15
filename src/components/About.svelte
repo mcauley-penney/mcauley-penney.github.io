@@ -1,3 +1,7 @@
+<script>
+    import { base } from "$app/paths";
+</script>
+
 <section id="about" class="container sm:px-0 md:px-0 pt-20 mx-auto mb-10">
     <div class="flex flex-col lg:flex-row justify-between items-start gap-8">
         <h1
@@ -46,7 +50,7 @@
                 <span style="display: inline-block;">
                     👹 My favorite video game is
                     <img
-                        src="/src/assets/doom_logo.gif"
+                        src="{base}/doom_logo.gif"
                         alt="Logo for the video game Doom"
                         width="100em"
                         height="100em"

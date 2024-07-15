@@ -18,9 +18,9 @@
     --accent: #a1aba0;
     --accent-hover: #869385;
     --background: #f2f7f7;
-    --border: #AFB3B3;
+    --border: #afb3b3;
     --card-foreground: #0e1111;
-    --card: #D9DEDE;
+    --card: #d9dede;
     --destructive-foreground: #e2e7e8;
     --destructive: #96838a;
     --foreground: #0e1111;
@@ -68,6 +68,9 @@
   * {
     @apply border-border;
     scroll-behavior: smooth;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   body {

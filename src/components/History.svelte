@@ -1,7 +1,8 @@
 <script lang="ts">
+    import { base } from "$app/paths";
     import { onMount } from "svelte";
     import { fade } from "svelte/transition";
-    import { WORK, EDUCATION } from "../data/content";
+    import { WORK, EDUCATION } from "$src/data/content";
     import MdiCalendarBlank from "~icons/mdi/calendar-blank";
     import MdiBusiness from "~icons/mdi/business";
     import MdiSchool from "~icons/mdi/school";
@@ -97,7 +98,7 @@
                     md:mt-0 mb-4"
                 >
                     <a
-                        href="/src/assets/documents/jacob-penney_resume.pdf"
+                        href="{base}/documents/jacob-penney_resume.pdf"
                         target="_blank"
                         class="custom-button {isResumeLoading
                             ? 'custom-button--loading'
@@ -143,7 +144,7 @@
                     </a>
                     <div class="divider" />
                     <a
-                        href="/src/assets/documents/jacob-penney_resume.pdf"
+                        href="{base}/documents/jacob-penney_resume.pdf"
                         target="_blank"
                         class="custom-button {isCVLoading
                             ? 'custom-button--loading'

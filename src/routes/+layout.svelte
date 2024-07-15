@@ -1,10 +1,10 @@
 <script lang="ts">
-    import "../global.css";
-    import NavBar from "../components/Navbar.svelte";
-    import Hero from "../components/Hero.svelte";
-    import About from "../components/About.svelte";
-    import History from "../components/History.svelte";
-    import Publications from "../components/Publications.svelte";
+    import "$lib/styles/global.css";
+    import NavBar from "$src/components/Navbar.svelte";
+    import Hero from "$src/components/Hero.svelte";
+    import About from "$src/components/About.svelte";
+    import History from "$src/components/History.svelte";
+    import Publications from "$src/components/Publications.svelte";
 </script>
 
 <NavBar />

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { CITES } from "../data/content";
+    import { CITES } from "$src/data/content";
 </script>
 
 <div id="academia" class="container sm:px-0 md:px-0 pt-20 mx-auto mb-10">
