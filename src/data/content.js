@@ -15,20 +15,16 @@ function getCurrentISODate() {
 
 export const NAV_LINKS = [
   {
-    name: "About",
+    name: "ABOUT",
     link: "#about",
   },
   {
-    name: "History",
+    name: "HISTORY",
     link: "#history",
   },
   {
-    name: "Projects",
-    link: "#projects",
-  },
-  {
-    name: "Contact",
-    link: "#contact",
+    name: "ACADEMIA",
+    link: "#academia",
   },
 ];
 
@@ -70,84 +66,99 @@ export const WORK = [
     title: "Graduate Researcher",
     company: "Northern Arizona University",
     location: "Flagstaff, AZ, USA",
+    date: ["2023-05", getCurrentISODate()],
+    delta: null,
     description: `As a PhD student, I study how Large Language Models impact computer science pedagogy. I published my first first-author paper, a book chapter discussing the requirements that university instructors have for future Large Language Model-based conversational agents that would seek to be used in the classroom, during my first semester. This work won "Best Paper" award at the accepting workshop. Since then, I've been interviewing novice computer science students on their usage of LLM-based chatbots and working with my lab to build one of our own. During this, I'm mentoring one graduate student and managing two undergaduate students.
 
     I'm also continuing with research I was involved with as an undergraduate, working with Dr. Fabio Santos of Grand Canyon University on using machine learning models to predict skills to solve open issues.
 
     Through this process, I'm becoming a more independent learner and professional, developing research and technical presentation skills, and honing development skills I built as an undergraduate.
  `,
-    date: ["2023-05", getCurrentISODate()],
-    delta: null,
-    tech: [
-      {
-        name: [],
-        colors: [
-          "bg-purple-950/50 text-purple-400 ring-purple-400/20",
-          "bg-sky-950/50 text-sky-400 ring-sky-400/20",
-          "bg-yellow-950/40 text-yellow-400 ring-yellow-400/20",
-          "bg-rose-950/40 text-rose-400 ring-rose-400/20",
-          "bg-violet-950/40 text-violet-400 ring-violet-400/20",
-        ],
-      },
-    ],
   },
   {
     title: "Team Lead and Fullstack Developer",
     company: "Lowell Observatory",
     location: "Flagstaff, AZ, USA",
+    date: ["2022-08", "2023-05"],
+    delta: "9 months",
     description: `During my senior year as a B.S. Applied Computer Science student, I had the opportunity to work with a team of four other peers on a senior capstone project for Dr. Joe Llama at Lowell Observatory. We were tasked with building a web application that allowed astronomers to manage spectrographs and cameras for observations and I volunteered to be our team lead and a fullstack developer. My responsibilities included managing communication with our client and our team's supervisor for the duration of the project and contributing to the frontend, backend, interfaces for the hardware our application would manage, and DevOps tasks like containerization.
 
     In the end, I contributed almost half of the project's total commits and led our team to completing most of our stretch goals, client acceptance of the product, and receiving the second highest marks from a client in a class with 12 total clients.
     `,
-    date: ["2022-08", "2023-05"],
-    delta: "9 months",
-    tech: [
-      {
-        name: [],
-        colors: [
-          "bg-purple-950/50 text-purple-400 ring-purple-400/20",
-          "bg-sky-950/50 text-sky-400 ring-sky-400/20",
-          "bg-yellow-950/40 text-yellow-400 ring-yellow-400/20",
-          "bg-rose-950/40 text-rose-400 ring-rose-400/20",
-          "bg-violet-950/40 text-violet-400 ring-violet-400/20",
-        ],
-      },
-    ],
   },
   {
     title: "Undergaduate Researcher",
     company: "Northern Arizona University",
     location: "Flagstaff, AZ, USA",
-    description: `During my two years as an undergraduate researcher under Dr. Marco Gerosa at Northern Arizona University, I developed software for a project led by his PhD student, Fabio Santos (now a professor at Grand Canyon University). The tool our team produced uses machine learning to predict the skills needed to successfully resolve open issues on GitHub. From this project, including software I either wrote or contributed to, we produced three publications at significant conferences and journals (see my publications section). Today, I continue to contribute to Dr. Santos' work through development and publications on the tool.
-    `,
     date: ["2021-04", "2023-05"],
     delta: "2 years, 1 month",
-    tech: [
-      {
-        name: [],
-        colors: [
-          "bg-purple-950/50 text-purple-400 ring-purple-400/20",
-          "bg-sky-950/50 text-sky-400 ring-sky-400/20",
-          "bg-yellow-950/40 text-yellow-400 ring-yellow-400/20",
-          "bg-rose-950/40 text-rose-400 ring-rose-400/20",
-          "bg-violet-950/40 text-violet-400 ring-violet-400/20",
-        ],
-      },
-    ],
+    description: `During my two years as an undergraduate researcher under Dr. Marco Gerosa at Northern Arizona University, I developed software for a project led by his PhD student, Fabio Santos (now a professor at Grand Canyon University). The tool our team produced uses machine learning to predict the skills needed to successfully resolve open issues on GitHub. From this project, including software I either wrote or contributed to, we produced three publications at significant conferences and journals (see my publications section). Today, I continue to contribute to Dr. Santos' work through development and publications on the tool.
+    `,
   },
 ];
 
-export const TECH_STACK = [
-  "Python",
-  "C",
-  "React",
-  "JavaScript",
-  "Java",
-  "Lua",
-  "Svelte",
-  "Vite",
-  "HTML5",
-  "CSS3",
+export const EDUCATION = [
+  {
+    degree: "MSc Computer Science",
+    school: "Northern Arizona University",
+    location: "Flagstaff, AZ, USA",
+    date: ["2023-08", null],
+    gpa: "3.6",
+  },
+  {
+    degree: "BS Applied Computer Science",
+    school: "Northern Arizona University",
+    location: "Flagstaff, AZ, USA",
+    date: ["2019-08", "2023-05"],
+  },
+  {
+    degree: "BA Comparative Cultural Studies",
+    school: "Northern Arizona University",
+    location: "Flagstaff, AZ, USA",
+    date: ["2011-08 to 2015-05", "2019-08 to 2023-05"],
+  },
+];
+
+export const CITES = [
+  {
+    year: 2023,
+    entries: [
+      {
+        authors: "Penney, J., Pimentel, J.F., Steinmacher, I., Gerosa, M.A.",
+        title:
+          "Anticipating User Needs: Insights from Design Fiction on Conversational Agents for Computational Thinking",
+        venue:
+          "7th International Workshop on Chatbot Research (CONVERSATIONS 2023)",
+        doi: "https://doi.org/10.1007/978-3-031-54975-5_12",
+      },
+      {
+        authors:
+          "Santos, F., Vargovich, J., Trinkenreich, B., Santos, I., Penney, J., Britto, R., Pimentel, J.F., Wiese, I., Steinmacher, I., Sarma, A., Gerosa, M.A.",
+        title:
+          "Tag that issue: Applying API-domain labels in issue tracking systems",
+        venue: "Empirical Software Engineering (EMSE)",
+        doi: "https://doi.org/10.1007/s10664-023-10329-4",
+      },
+      {
+        authors:
+          "Santos, F., Penney, J., Pimentel, J., Wiese, I., Steinmacher, I., Gerosa, M.A.",
+        title:
+          "Tell Me Who Are You Talking to and I Will Tell You What Issues Need Your Skills",
+        venue:
+          "International Conference on Mining Software Repositories (MSR 2023)",
+        doi: "https://doi.org/10.1109/MSR59073.2023.00087",
+      },
+      {
+        authors:
+          "Vargovich, J., Santos, F., Penney, J., Gerosa, M.A., Steinmacher, I.",
+        title:
+          "GiveMeLabeledIssues: An Open Source Issue Recommendation System",
+        venue:
+          "International Conference on Mining Software Repositories (MSR 2023)",
+        doi: "https://doi.org/10.1109/MSR59073.2023.00061",
+      },
+    ],
+  },
 ];
 
 //

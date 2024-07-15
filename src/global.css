@@ -1,7 +1,12 @@
+/* OLD */
 /* Fonts: Roboto Slab, Inter, JetBrains Mono */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* NEW */
+/* Roboto, Open Sans, Fira Code */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,28 +14,28 @@
 
 @layer base {
   :root {
-    --accent-foreground: #d32f2f;
-    --accent: #a47a0c;
-    --accent-hover: #b38600;
-    --background: #fdf6e3;
-    --border: #b38600;
-    --card-foreground: #002b36;
-    --card: #fbeecb;
+    --accent-foreground: #c5686a;
+    --accent: #a1aba0;
+    --accent-hover: #869385;
+    --background: #f2f7f7;
+    --border: #AFB3B3;
+    --card-foreground: #0e1111;
+    --card: #D9DEDE;
     --destructive-foreground: #e2e7e8;
     --destructive: #96838a;
-    --foreground: #002b36;
-    --hover: #fae7b3;
-    --input: #b38600;
-    --muted-foreground: #a47a0c;
-    --muted: #fbeecb;
-    --primary-foreground: #002b36;
+    --foreground: #0e1111;
+    --hover: #c5686a;
+    --input: #67b5fc;
+    --muted-foreground: #67b5fc;
+    --muted: #e2eded;
+    --primary-foreground: #0e1111;
     --primary: #fdf6e3;
-    --secondary-foreground: #a47a0c;
-    --secondary: #fbeecb;
+    --secondary-foreground: #67b5fc;
+    --secondary: #e2e7e8;
     --shadow: #091e42;
 
     --highlight-color: #d6c7c7;
-    --highlight-text-color: #002b36;
+    --highlight-text-color: #0e1111;
 
     --radius: 0.5rem;
   }
@@ -40,9 +45,9 @@
     --accent: #2e7d32;
     --accent-hover: #359039;
     --background: #1c2128;
-    --border: #697481;
+    --border: #384049;
     --card-foreground: #c2cdda;
-    --card: #2d333b;
+    --card: #191d24;
     --destructive-foreground: #e2e7e8;
     --destructive: #d32f2f;
     --foreground: #e2e7e8;
@@ -63,7 +68,6 @@
   * {
     @apply border-border;
     scroll-behavior: smooth;
-    border: none;
   }
 
   body {

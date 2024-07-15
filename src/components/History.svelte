@@ -1,9 +1,10 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { fade } from "svelte/transition";
-    import { WORK } from "../data/content";
+    import { WORK, EDUCATION } from "../data/content";
     import MdiCalendarBlank from "~icons/mdi/calendar-blank";
     import MdiBusiness from "~icons/mdi/business";
+    import MdiSchool from "~icons/mdi/school";
     import MdiLocationOnOutline from "~icons/mdi/location-on-outline";
 
     import {
@@ -78,19 +79,22 @@
     });
 </script>
 
-<div id="history" class="history relative isolate overflow-hidden">
+<div id="history" class="history relative isolate overflow-hidden pt-20 px-5">
     <div class="mx-auto max-w-6xl px-6 lg:px-6">
-        <div class="py-16 section">
+        <div class="py-2 section">
             <div
-                class="max-w-2xl md:inline-flex items-center gap-x-8 inter-font"
+                class="max-w-2xl md:inline-flex items-center gap-x-4 inter-font"
             >
                 <h1
-                    class="heading tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl"
+                    class="heading tracking-tight text-zinc-800
+                    dark:text-zinc-100 sm:text-4xl text-2xl px-10 mb-5"
                 >
                     History
                 </h1>
                 <div
-                    class="display: flex justify-content:space-between ml-4 md:flex-row gap-2 md:gap-0 justify-center items-center mt-6 md:mt-0"
+                    class="display: flex justify-content:space-between
+                    md:flex-row gap-2 md:gap-0 justify-center items-center mt-6
+                    md:mt-0 mb-4"
                 >
                     <a
                         href="/src/assets/documents/jacob-penney_resume.pdf"
@@ -132,7 +136,9 @@
                                     />
                                 </svg>
                             </div>
-                            <span class="ml-2">Résumé</span>
+                            <span class="ml-2 sm:text-sm md:text-lg"
+                                >Résumé</span
+                            >
                         {/if}
                     </a>
                     <div class="divider" />
@@ -173,33 +179,43 @@
                                     color="black"
                                 />
                             </svg>
-                            <span class="ml-2">Curriculum Vitae</span>
+                            <span class="ml-2 sm:text-sm md:text-lg"
+                                >Curriculum Vitae</span
+                            >
                         {/if}
                     </a>
                 </div>
             </div>
         </div>
-        <div class="timeline px-4">
+        <h2
+            class="heading tracking-tight text-zinc-800
+                    dark:text-zinc-100 sm:text-2xl text-xl mt-2 px-10 mb-5"
+        >
+            Work
+        </h2>
+        <div class="timeline">
             {#each WORK as job}
-                <div class="mb-8 items-start relative">
-                    <div class="entry-icon">
+                <div class="mb-8 items-start relative mt-6">
+                    <div class="work-entry-icon ml-4 sm:text-md md:text-xl">
                         <MdiBusiness />
                     </div>
                     <div class="ml-16">
                         <Accordion value={isMobile ? [] : ["accordion"]}>
-                            <AccordionItem value="accordion">
+                            <AccordionItem
+                                value="accordion"
+                                style="border: none;"
+                            >
                                 <AccordionTrigger
-                                    class="mt-1 text-md font-semibold text-zinc-700 dark:text-zinc-300"
+                                    class="sm:text-md lg:text-xl font-semibold text-zinc-700 dark:text-zinc-300"
                                     >{job.title}
                                 </AccordionTrigger>
                                 <h4
-                                    class="text-base tracking-tight text-zinc-700 dark:text-zinc-300"
+                                    class="sm:text-md lg:text-lg tracking-tight text-zinc-700 dark:text-zinc-300"
                                 >
                                     {job.company}
                                 </h4>
                                 <h5
-                                    class="text-base tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
-                                    style="font-size: 14px"
+                                    class="sm:text-sm md:text-lg tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
                                 >
                                     <MdiLocationOnOutline
                                         class="inline-block mr-2 mb-1"
@@ -208,7 +224,7 @@
                                 </h5>
 
                                 <p
-                                    class="text-sm text-zinc-500 dark:text-zinc-500"
+                                    class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
                                 >
                                     <MdiCalendarBlank
                                         class="inline-block mr-2 mb-1"
@@ -216,7 +232,8 @@
                                     {#if job.delta === null}
                                         {`${job.date[0]} - `}
                                         <span
-                                            class="latest-badge text-sm text-zinc-700 dark:text-zinc-300"
+                                            class="latest-badge sm:text-sm
+                                            md:text-lg text-zinc-700 dark:text-zinc-300"
                                         >
                                             Present
                                         </span>
@@ -225,24 +242,82 @@
                                     {/if}
                                 </p>
                                 <p
-                                    class="text-sm text-zinc-500 dark:text-zinc-500
-                            mb-6 ml-7"
+                                    class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500
+                            mb-6 ml-9"
                                 >
                                     {formatDate(job.date[0], job.date[1])}
                                 </p>
                                 <AccordionContent
-                                    class="text-base tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
-                                    style="font-size: 14px"
+                                    class="text-base tracking-tight text-zinc-500 dark:text-zinc-500"
                                 >
                                     <p
-                                        class="text-gray-600 dark:text-gray-300 mb-8"
-                                        style="white-space: pre-line; font-size: 16px;"
+                                        class="text-gray-600 dark:text-gray-300 sm:text-md md:text-lg"
+                                        style="white-space: pre-line;
+                                        padding-right: 2em;"
                                     >
                                         {job.description}
                                     </p>
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
+                    </div>
+                </div>
+            {/each}
+        </div>
+        <h2
+            class="mt-12 heading tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl text-xl px-10 mb-5"
+        >
+            Education
+        </h2>
+        <div class="timeline">
+            {#each EDUCATION as degree}
+                <div class="mb-12 items-start relative mt-6">
+                    <div class="edu-entry-icon ml-4 sm:text-md md:text-xl">
+                        <MdiSchool />
+                    </div>
+                    <div class="ml-16">
+                        <h3
+                            class="sm:text-md lg:text-xl font-semibold text-zinc-700 dark:text-zinc-300"
+                        >
+                            {degree.degree}
+                        </h3>
+                        <h4
+                            class="sm:text-md lg:text-lg tracking-tight text-zinc-700 dark:text-zinc-300"
+                        >
+                            {degree.school}
+                        </h4>
+                        <h5
+                            class="sm:text-sm md:text-lg tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
+                        >
+                            <MdiLocationOnOutline
+                                class="inline-block mr-2 mb-1"
+                            />
+                            {degree.location}
+                        </h5>
+
+                        <p
+                            class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
+                        >
+                            {#if degree.date[1] === null && degree.date[1] === null}
+                                <MdiCalendarBlank
+                                    class="inline-block mr-2 mb-1"
+                                />
+                                {`${degree.date[0]} - `}
+                                <span
+                                    class="latest-badge sm:text-sm
+                                            md:text-lg text-zinc-700 dark:text-zinc-300"
+                                >
+                                    Present
+                                </span>
+                            {/if}
+                        </p>
+                        {#if degree.gpa !== undefined}
+                            <p
+                                class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
+                            >
+                                {`Current GPA: ${degree.gpa}`}
+                            </p>
+                        {/if}
                     </div>
                 </div>
             {/each}
@@ -285,7 +360,16 @@
         cursor: pointer;
         display: flex;
         font-size: 12px;
-        padding: 8px 12px;
+        padding: 10px 12px;
+        font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+        .custom-button {
+            font-size: 10px;
+            padding: 6px 8px;
+            font-weight: 400;
+        }
     }
 
     .custom-button:hover {
@@ -390,10 +474,25 @@
         background: var(--muted);
     }
 
-    .entry-icon {
+    .work-entry-icon {
         position: absolute;
         left: 1.25rem;
-        top: -0.4rem;
+        top: -0.55rem;
+        transform: translateX(-50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--background);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary-foreground);
+    }
+
+    .edu-entry-icon {
+        position: absolute;
+        left: 1.25rem;
+        top: -0.45rem;
         transform: translateX(-50%);
         width: 2.5rem;
         height: 2.5rem;
@@ -406,7 +505,7 @@
     }
 
     .inter-font {
-        font-family: "Inter", monospace;
+        font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         color: var(--foreground);
     }
