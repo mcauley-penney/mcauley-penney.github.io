@@ -103,25 +103,27 @@ export const EDUCATION = [
     school: "Northern Arizona University",
     location: "Flagstaff, AZ, USA",
     date: ["2023-08", null],
-    gpa: "3.6",
+    desc: "Current GPA: 3.6",
   },
   {
     degree: "BS Applied Computer Science",
     school: "Northern Arizona University",
     location: "Flagstaff, AZ, USA",
     date: ["2019-08", "2023-05"],
+    desc: "Minor in Cybersecurity"
   },
   {
     degree: "BA Comparative Cultural Studies",
     school: "Northern Arizona University",
     location: "Flagstaff, AZ, USA",
     date: ["2011-08 to 2015-05", "2019-08 to 2023-05"],
+    desc: "Emphasis in Religious Studies and minors in Art History and Asian Studies"
   },
 ];
 
 export const CITES = [
   {
-    year: 2023,
+    year: 2024,
     entries: [
       {
         authors: "Penney, J., Pimentel, J.F., Steinmacher, I., Gerosa, M.A.",
@@ -131,6 +133,11 @@ export const CITES = [
           "7th International Workshop on Chatbot Research (CONVERSATIONS 2023)",
         doi: "https://doi.org/10.1007/978-3-031-54975-5_12",
       },
+    ],
+  },
+  {
+    year: 2023,
+    entries: [
       {
         authors:
           "Santos, F., Vargovich, J., Trinkenreich, B., Santos, I., Penney, J., Britto, R., Pimentel, J.F., Wiese, I., Steinmacher, I., Sarma, A., Gerosa, M.A.",
@@ -205,20 +212,3 @@ export const CITES = [
 //    },
 //  };
 //
-
-//
-//  // SEÇÃO CONTATO
-//  export const CONTATO_INFO = [
-//    {
-//      name: "EMAIL",
-//      valor: "mthsoliveira7@skiff.com",
-//    },
-//    {
-//      name: "WHATSAPP / TELEGRAM",
-//      valor: "+55 79 998726656",
-//    },
-//    {
-//      name: "DISCORD",
-//      valor: "mthsoliveira7",
-//    },
-//  ];

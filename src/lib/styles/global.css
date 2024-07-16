@@ -20,11 +20,11 @@
     --background: #f2f7f7;
     --border: #afb3b3;
     --card-foreground: #0e1111;
-    --card: #d9dede;
+    --card: #F5F9F9;
     --destructive-foreground: #e2e7e8;
     --destructive: #96838a;
     --foreground: #0e1111;
-    --hover: #c5686a;
+    --hover: #67b5fc;
     --input: #67b5fc;
     --muted-foreground: #67b5fc;
     --muted: #e2eded;
@@ -78,6 +78,16 @@
     background-color: var(--background);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--foreground);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
   ::-moz-selection {

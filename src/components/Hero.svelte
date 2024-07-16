@@ -16,7 +16,7 @@
     class="container mx-auto flex px-5 2xl:px-28 pt-20 md:pt-24 lg:pt-24 2xl:pt-0 2xl:min-h-screen flex-col lg:flex-row items-center"
 >
     <div class="text-container lg:w-1/2 flex flex-col items-center text-center">
-        <h1 class="hero text-4xl md:text-6xl font-bold">I'm McAuley</h1>
+        <h1 class="hero text-6xl md:text-6xl font-bold">I'm McAuley</h1>
 
         <p class="description text-xl md:text-4xl mb-8">
             I write software and research how humans interact with computers

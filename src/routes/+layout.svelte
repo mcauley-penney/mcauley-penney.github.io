@@ -5,6 +5,7 @@
     import About from "$src/components/About.svelte";
     import History from "$src/components/History.svelte";
     import Publications from "$src/components/Publications.svelte";
+    import  Contact from "$src/components/Contact.svelte";
 </script>
 
 <NavBar />
@@ -12,6 +13,7 @@
 <About />
 <History />
 <Publications />
+<Contact />
 
 <main>
     <slot></slot>

@@ -75,87 +75,35 @@
             isMobile = window.innerWidth < 600;
         };
 
+        handleResize(); // Call once to set initial state
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     });
 </script>
 
-<div id="history" class="history relative isolate overflow-hidden pt-20 px-5">
-    <div class="mx-auto max-w-6xl px-6 lg:px-6">
-        <div class="py-2 section">
-            <div
-                class="max-w-2xl md:inline-flex items-center gap-x-4 inter-font"
+<div id="history" class="container pt-20 mx-auto mb-10 md:px-7">
+    <div class="py-2 section">
+        <div class="flex flex-wrap items-center gap-1 inter-font">
+            <h1
+                class="font-bold text-2xl md:text-4xl tracking-tight text-zinc-800 dark:text-zinc-100 px-9 mb-5"
             >
-                <h1
-                    class="heading tracking-tight text-zinc-800
-                    dark:text-zinc-100 sm:text-4xl text-2xl px-10 mb-5"
+                History
+            </h1>
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+                <a
+                    href="{base}/documents/jacob-penney_resume.pdf"
+                    target="_blank"
+                    class="custom-button {isResumeLoading
+                        ? 'custom-button--loading'
+                        : ''}"
+                    on:click={handleResumeClick}
+                    aria-disabled={isResumeLoading}
                 >
-                    History
-                </h1>
-                <div
-                    class="display: flex justify-content:space-between
-                    md:flex-row gap-2 md:gap-0 justify-center items-center mt-6
-                    md:mt-0 mb-4"
-                >
-                    <a
-                        href="{base}/documents/jacob-penney_resume.pdf"
-                        target="_blank"
-                        class="custom-button {isResumeLoading
-                            ? 'custom-button--loading'
-                            : ''}"
-                        on:click={handleResumeClick}
-                        aria-disabled={isResumeLoading}
-                    >
-                        <!-- TODO: abstract out -->
-                        {#if isResumeLoading}
-                            <span class="spinner"></span>
-                            Downloading...
-                        {:else}
-                            <div>
-                                <svg
-                                    class="download-icon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 32 32"
-                                >
-                                    <circle cx="16" cy="16" r="4" />
-                                    <path
-                                        d="M30.94 15.66A16.69 16.69 0 0 0 16 5A16.69 16.69 0 0 0 1.06 15.66a1 1 0 0 0 0 .68A16.69 16.69 0 0 0 16 27a16.69 16.69 0 0 0 14.94-10.66a1 1 0 0 0 0-.68M16 22.5a6.5 6.5 0 1 1 6.5-6.5a6.51 6.51 0 0 1-6.5 6.5"
-                                    />
-                                </svg>
-                                <svg
-                                    class="hover-icon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M22 8s-4 6-10 6S2 8 2 8m13 5.5l1.5 2.5m3.5-5l2 2M2 13l2-2m5 2.5L7.5 16"
-                                        color="black"
-                                    />
-                                </svg>
-                            </div>
-                            <span class="ml-2 sm:text-sm md:text-lg"
-                                >Résumé</span
-                            >
-                        {/if}
-                    </a>
-                    <div class="divider" />
-                    <a
-                        href="{base}/documents/jacob-penney_resume.pdf"
-                        target="_blank"
-                        class="custom-button {isCVLoading
-                            ? 'custom-button--loading'
-                            : ''}"
-                        on:click={handleCVClick}
-                        aria-disabled={isCVLoading}
-                    >
-                        {#if isCVLoading}
-                            <span class="spinner"></span>
-                            Downloading...
-                        {:else}
+                    {#if isResumeLoading}
+                        <span class="spinner"></span>
+                        Downloading...
+                    {:else}
+                        <div class="flex items-center">
                             <svg
                                 class="download-icon"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -180,149 +128,184 @@
                                     color="black"
                                 />
                             </svg>
-                            <span class="ml-2 sm:text-sm md:text-lg"
-                                >Curriculum Vitae</span
+                            <span class="ml-2 text-xs md:text-md">Resume</span>
+                        </div>
+                    {/if}
+                </a>
+                <a
+                    href="{base}/documents/jacob-penney_resume.pdf"
+                    target="_blank"
+                    class="custom-button {isCVLoading
+                        ? 'custom-button--loading'
+                        : ''}"
+                    on:click={handleCVClick}
+                    aria-disabled={isCVLoading}
+                >
+                    {#if isCVLoading}
+                        <span class="spinner"></span>
+                        Downloading...
+                    {:else}
+                        <div class="flex items-center">
+                            <svg
+                                class="download-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 32"
                             >
-                        {/if}
-                    </a>
-                </div>
+                                <circle cx="16" cy="16" r="4" />
+                                <path
+                                    d="M30.94 15.66A16.69 16.69 0 0 0 16 5A16.69 16.69 0 0 0 1.06 15.66a1 1 0 0 0 0 .68A16.69 16.69 0 0 0 16 27a16.69 16.69 0 0 0 14.94-10.66a1 1 0 0 0 0-.68M16 22.5a6.5 6.5 0 1 1 6.5-6.5a6.51 6.51 0 0 1-6.5 6.5"
+                                />
+                            </svg>
+                            <svg
+                                class="hover-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M22 8s-4 6-10 6S2 8 2 8m13 5.5l1.5 2.5m3.5-5l2 2M2 13l2-2m5 2.5L7.5 16"
+                                    color="black"
+                                />
+                            </svg>
+                            {#if isMobile === true}
+                                <span class="ml-2 text-xs">CV</span>
+                            {:else}
+                                <span class="ml-2 text-md"
+                                    >Curriculum Vitae</span
+                                >
+                            {/if}
+                        </div>
+                    {/if}
+                </a>
             </div>
         </div>
-        <h2
-            class="heading tracking-tight text-zinc-800
-                    dark:text-zinc-100 sm:text-2xl text-xl mt-2 px-10 mb-5"
-        >
-            Work
-        </h2>
-        <div class="timeline">
-            {#each WORK as job}
-                <div class="mb-8 items-start relative mt-6">
-                    <div class="work-entry-icon ml-4 sm:text-md md:text-xl">
-                        <MdiBusiness />
-                    </div>
-                    <div class="ml-16">
-                        <Accordion value={isMobile ? [] : ["accordion"]}>
-                            <AccordionItem
-                                value="accordion"
-                                style="border: none;"
-                            >
-                                <AccordionTrigger
-                                    class="sm:text-md lg:text-xl font-semibold text-zinc-700 dark:text-zinc-300"
-                                    >{job.title}
-                                </AccordionTrigger>
-                                <h4
-                                    class="sm:text-md lg:text-lg tracking-tight text-zinc-700 dark:text-zinc-300"
-                                >
-                                    {job.company}
-                                </h4>
-                                <h5
-                                    class="sm:text-sm md:text-lg tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
-                                >
-                                    <MdiLocationOnOutline
-                                        class="inline-block mr-2 mb-1"
-                                    />
-                                    {job.location}
-                                </h5>
-
-                                <p
-                                    class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
-                                >
-                                    <MdiCalendarBlank
-                                        class="inline-block mr-2 mb-1"
-                                    />
-                                    {#if job.delta === null}
-                                        {`${job.date[0]} - `}
-                                        <span
-                                            class="latest-badge sm:text-sm
-                                            md:text-lg text-zinc-700 dark:text-zinc-300"
-                                        >
-                                            Present
-                                        </span>
-                                    {:else}
-                                        {`${job.date[0]} - ${job.date[1]}`}
-                                    {/if}
-                                </p>
-                                <p
-                                    class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500
-                            mb-6 ml-9"
-                                >
-                                    {formatDate(job.date[0], job.date[1])}
-                                </p>
-                                <AccordionContent
-                                    class="text-base tracking-tight text-zinc-500 dark:text-zinc-500"
-                                >
-                                    <p
-                                        class="text-gray-600 dark:text-gray-300 sm:text-md md:text-lg"
-                                        style="white-space: pre-line;
-                                        padding-right: 2em;"
-                                    >
-                                        {job.description}
-                                    </p>
-                                </AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
-                    </div>
+    </div>
+    <h2
+        class="font-bold tracking-tight text-zinc-800 dark:text-zinc-100 text-xl md:text-2xl mt-2 px-10 mb-5"
+    >
+        Work
+    </h2>
+    <div class="timeline">
+        {#each WORK as job}
+            <div class="mb-8 items-start relative mt-6">
+                <div class="work-entry-icon ml-4 sm:text-md md:text-xl">
+                    <MdiBusiness />
                 </div>
-            {/each}
-        </div>
-        <h2
-            class="mt-12 heading tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl text-xl px-10 mb-5"
-        >
-            Education
-        </h2>
-        <div class="timeline">
-            {#each EDUCATION as degree}
-                <div class="mb-12 items-start relative mt-6">
-                    <div class="edu-entry-icon ml-4 sm:text-md md:text-xl">
-                        <MdiSchool />
-                    </div>
-                    <div class="ml-16">
-                        <h3
-                            class="sm:text-md lg:text-xl font-semibold text-zinc-700 dark:text-zinc-300"
-                        >
-                            {degree.degree}
-                        </h3>
-                        <h4
-                            class="sm:text-md lg:text-lg tracking-tight text-zinc-700 dark:text-zinc-300"
-                        >
-                            {degree.school}
-                        </h4>
-                        <h5
-                            class="sm:text-sm md:text-lg tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
-                        >
-                            <MdiLocationOnOutline
-                                class="inline-block mr-2 mb-1"
-                            />
-                            {degree.location}
-                        </h5>
-
-                        <p
-                            class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
-                        >
-                            {#if degree.date[1] === null && degree.date[1] === null}
-                                <MdiCalendarBlank
+                <div class="work-entry ml-12">
+                    <Accordion value={isMobile ? [] : ["accordion"]}>
+                        <AccordionItem value="accordion" style="border: none;">
+                            <AccordionTrigger
+                                class="sm:text-md lg:text-xl font-semibold text-zinc-700 dark:text-zinc-300"
+                            >
+                                {job.title}
+                            </AccordionTrigger>
+                            <h4
+                                class="sm:text-md lg:text-lg tracking-tight text-zinc-700 dark:text-zinc-300"
+                            >
+                                {job.company}
+                            </h4>
+                            <h5
+                                class="sm:text-sm md:text-lg tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
+                            >
+                                <MdiLocationOnOutline
                                     class="inline-block mr-2 mb-1"
                                 />
-                                {`${degree.date[0]} - `}
-                                <span
-                                    class="latest-badge sm:text-sm
-                                            md:text-lg text-zinc-700 dark:text-zinc-300"
-                                >
-                                    Present
-                                </span>
-                            {/if}
-                        </p>
-                        {#if degree.gpa !== undefined}
+                                {job.location}
+                            </h5>
+
                             <p
                                 class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
                             >
-                                {`Current GPA: ${degree.gpa}`}
+                                <MdiCalendarBlank
+                                    class="inline-block mr-2 mb-1"
+                                />
+                                {#if job.delta === null}
+                                    {`${job.date[0]} - `}
+                                    <span
+                                        class="latest-badge sm:text-sm md:text-lg text-zinc-700 dark:text-zinc-300"
+                                    >
+                                        Present
+                                    </span>
+                                {:else}
+                                    {`${job.date[0]} - ${job.date[1]}`}
+                                {/if}
                             </p>
-                        {/if}
-                    </div>
+                            <p
+                                class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500 mb-6 ml-9"
+                            >
+                                {formatDate(job.date[0], job.date[1])}
+                            </p>
+                            <AccordionContent
+                                class="text-base tracking-tight text-zinc-500 dark:text-zinc-500"
+                            >
+                                <p
+                                    class="text-gray-900 dark:text-gray-300 sm:text-md md:text-lg pr-6 md:pr-40"
+                                    style="white-space: pre-line"
+                                >
+                                    {job.description}
+                                </p>
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
-            {/each}
-        </div>
+            </div>
+        {/each}
+    </div>
+    <h2
+        class="font-bold text-xl md:text-2xl mt-12 heading tracking-tight text-zinc-800 dark:text-zinc-100 px-10 mb-5"
+    >
+        Education
+    </h2>
+    <div class="timeline">
+        {#each EDUCATION as degree}
+            <div class="mb-12 items-start relative mt-6">
+                <div class="edu-entry-icon ml-4 sm:text-md md:text-xl">
+                    <MdiSchool />
+                </div>
+                <div class="ml-16 edu-entry">
+                    <h3
+                        class="sm:text-md lg:text-xl font-semibold text-zinc-700 dark:text-zinc-300"
+                    >
+                        {degree.degree}
+                    </h3>
+                    <h4
+                        class="sm:text-md lg:text-lg tracking-tight text-zinc-700 dark:text-zinc-300"
+                    >
+                        {degree.school}
+                    </h4>
+                    <h5
+                        class="sm:text-sm md:text-lg tracking-tight text-zinc-500 dark:text-zinc-500 mb-1"
+                    >
+                        <MdiLocationOnOutline class="inline-block mr-2 mb-1" />
+                        {degree.location}
+                    </h5>
+
+                    <p
+                        class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
+                    >
+                        {#if degree.date[1] === null && degree.date[1] === null}
+                            <MdiCalendarBlank class="inline-block mr-2 mb-1" />
+                            {`${degree.date[0]} - `}
+                            <span
+                                class="latest-badge sm:text-sm md:text-lg text-zinc-700 dark:text-zinc-300"
+                            >
+                                Present
+                            </span>
+                        {/if}
+                    </p>
+                    {#if degree.desc !== undefined}
+                        <p
+                            class="sm:text-sm md:text-lg text-zinc-500 dark:text-zinc-500"
+                        >
+                            {degree.desc}
+                        </p>
+                    {/if}
+                </div>
+            </div>
+        {/each}
     </div>
 </div>
 
@@ -331,24 +314,6 @@
 {/if}
 
 <style>
-    .history {
-        background: var(--background);
-    }
-
-    .heading {
-        color: var(--foreground);
-        font-family: "Roboto Slab", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .divider {
-        width: 1em;
-        height: auto;
-        display: inline-block;
-    }
-
     .custom-button {
         align-items: center;
         background-color: var(--accent);
@@ -359,16 +324,15 @@
         border: none;
         color: white;
         cursor: pointer;
-        display: flex;
+        display: inline-flex;
         font-size: 12px;
-        padding: 10px 12px;
+        padding: 6px 8px;
         font-weight: 500;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         .custom-button {
-            font-size: 10px;
-            padding: 6px 8px;
+            font-size: 8px;
             font-weight: 400;
         }
     }
@@ -388,8 +352,8 @@
     .download-icon {
         fill: white;
         display: inline-block;
-        height: 1.75em;
-        width: 1.75em;
+        height: 2em;
+        width: 2em;
     }
 
     .hover-icon {
@@ -468,17 +432,19 @@
     .timeline:before {
         content: "";
         position: absolute;
-        left: 2.25rem;
+        left: 1rem;
         top: 0;
         bottom: 0;
         width: 1px;
         background: var(--muted);
     }
 
+    .work-entry {
+        margin-top: -2rem;
+    }
+
     .work-entry-icon {
-        position: absolute;
         left: 1.25rem;
-        top: -0.55rem;
         transform: translateX(-50%);
         width: 2.5rem;
         height: 2.5rem;
@@ -490,10 +456,12 @@
         color: var(--secondary-foreground);
     }
 
+    .edu-entry {
+        margin-top: -2rem;
+    }
+
     .edu-entry-icon {
-        position: absolute;
         left: 1.25rem;
-        top: -0.45rem;
         transform: translateX(-50%);
         width: 2.5rem;
         height: 2.5rem;

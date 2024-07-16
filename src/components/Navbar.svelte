@@ -15,7 +15,7 @@
     <div class="container mx-auto flex items-center justify-between">
         <a
             href="#hero"
-            class="link jetbrains-font sm:text-xl md:text-2xl inline-flex rounded-sm duration-100"
+            class="link jetbrains-font sm:text-lg md:text-xl inline-flex rounded-sm duration-100"
         >
             MCAULEY
         </a>
@@ -36,7 +36,7 @@
             {#each NAV_LINKS as link}
                 <a
                     href={link.link}
-                    class="link text-lg py-1 px-2 inline-flex items-center rounded-sm duration-100"
+                    class="link text-md py-1 px-2 inline-flex items-center rounded-sm duration-100"
                 >
                     {link.name}
                 </a>
@@ -48,7 +48,7 @@
     <!--  Menu mobile -->
     {#if menuOpen}
         <nav
-            class="font-bold text-center text-xl md:hidden flex flex-col gap-y-4 h-screen justify-center inter-font"
+            class="text-center text-xl md:hidden flex flex-col gap-y-4 h-screen justify-center inter-font"
         >
             {#each NAV_LINKS as link}
                 <a href={link.link} on:click={toggleMenu}>
@@ -65,19 +65,25 @@
         font-optical-sizing: auto;
         font-weight: 500;
     }
+
     .inter-font {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         color: var(--foreground);
     }
+
     .navbar {
         backdrop-filter: blur(10px); /* Apply blur to the background */
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     }
+
     .link {
         color: var(--foreground);
+        padding: 3px 7px;
     }
+
     .link:hover {
         background-color: var(--hover);
+        border-radius: 4px;
     }
 </style>

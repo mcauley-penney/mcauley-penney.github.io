@@ -48,11 +48,11 @@ const config = {
           "dark-foreground": "#697481",
         },
         hover: {
-          DEFAULT: "#c5686a",
+          DEFAULT: "#67b5fc",
           dark: "#384049",
         },
         card: {
-          DEFAULT: "#D9DEDE",
+          DEFAULT: "#F5F9F9",
           dark: "#191d24",
           foreground: "#0e1111",
           "dark-foreground": "#c2cdda",
