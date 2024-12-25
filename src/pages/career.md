@@ -5,6 +5,14 @@ description: ""
 
 # Career
 
+## Research
+- Graduate Research Assistant
+    - Northern Arizona University, RESHAPE Lab
+    - 2023-05 to `Present`
+- Undergraduate Research Assistant
+    - Northern Arizona University, RESHAPE Lab
+    - 2021-04 to 2023-05
+
 ## Teaching
 
 ### Northern Arizona University
