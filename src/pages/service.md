@@ -13,7 +13,10 @@ description: ""
 - International Workshop on Chatbot Research and Design, Full Papers (2024)
 - International Workshop on Chatbot Research and Design, Short Papers (2023)
 
-## Speaking
+## Invited Lectures
+- Pontifical Catholic University of Rio de Janeiro, "Generative AI and Software Engineering" Seminar Series: "Conversational Agent Design for Programming Education" (2025)
+
+## Invited Talks
 - [Flagstaff Festival of Science](https://scifest.org/schedule-2024/): "Next-Gen Learning: How AI Transforms Education in Computer Science" (2024)
 
 ## Miscellaneous
