@@ -9,6 +9,7 @@ description: ""
 - [International Workshop on Chatbot Research and Design](https://2024.conversations.ws/organizers/) (2024)
 
 ## Reviewer
+- ACM Innovation and Technology in Computer Science Education, Full Papers (2025)
 - International Workshop on Chatbot Research and Design, Full Papers (2024)
 - International Workshop on Chatbot Research and Design, Short Papers (2023)
 
