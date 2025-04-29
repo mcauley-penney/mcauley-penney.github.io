@@ -17,7 +17,8 @@ I'm a Ph.D. student in Informatics and graduate research assistant under [Dr. Ig
 
 <br />
 
-:::note[Find me at]
+:::note[Find more at…]
+- [My curriculum vitae](../../static/img/jacob-penney_cv.pdf)
 - [Google Scholar](https://scholar.google.com/citations?user=4maC0rUAAAAJ&hl=en&oi=ao)
 - [ResearchGate](https://www.researchgate.net/profile/Jacob-Penney-2/research)
 - [GitHub](https://github.com/mcauley-penney)
@@ -26,4 +27,4 @@ I'm a Ph.D. student in Informatics and graduate research assistant under [Dr. Ig
 
 <br />
 
-<sub>Last updated December 2024</sub>
+<sub>Last updated April 2025</sub>
