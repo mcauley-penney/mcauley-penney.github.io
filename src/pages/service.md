@@ -7,11 +7,6 @@ description: ""
 
 ## Program Comittee
 
-### 2024
-
-- [International Workshop on Chatbot Research and Design 2024](https://2024.conversations.ws/organizers/)
-  - Full Papers
-
 ### 2025
 
 - ACM conference on Innovation and Technology in Computer Science Education 2025
@@ -21,6 +16,11 @@ description: ""
   - Full Papers
   - Posters
 - [International Workshop on Chatbot Research and Design 2025](https://2025.conversations.ws/organizers/)
+  - Full Papers
+
+### 2024
+
+- [International Workshop on Chatbot Research and Design 2024](https://2024.conversations.ws/organizers/)
   - Full Papers
 
 ## Non-Program Committee Reviewer
