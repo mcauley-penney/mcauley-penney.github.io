@@ -7,16 +7,21 @@ description: ""
 
 ## Program Comittee
 
+### 2024
+
 - [International Workshop on Chatbot Research and Design 2024](https://2024.conversations.ws/organizers/)
   - Full Papers
-- International Workshop on Chatbot Research and Design 2025 (forthcoming)
-  - Full Papers
+
+### 2025
+
 - ACM conference on Innovation and Technology in Computer Science Education 2025
   - Full Papers: Experience Reports & Tools
   - Won "Outstanding Reviewer" Award
 - CompEd 2025
   - Full Papers
   - Posters
+- [International Workshop on Chatbot Research and Design 2025](https://2025.conversations.ws/organizers/)
+  - Full Papers
 
 ## Non-Program Committee Reviewer
 
