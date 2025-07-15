@@ -25,7 +25,10 @@ description: ""
 
 ## Non-Program Committee Reviewer
 
-- International Workshop on Chatbot Research and Design, Short Papers (2023)
+### 2023
+
+- International Workshop on Chatbot Research and Design 2023
+  - Short Papers
 
 ## Invited Lectures
 
