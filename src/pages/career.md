@@ -8,11 +8,11 @@ description: ""
 ## Research
 
 - Graduate Research Assistant
-    - RESHAPE Lab, Northern Arizona University
-    - 2023-05 to Present
+  - RESHAPE Lab, Northern Arizona University
+  - 2023-05 to Present
 - Undergraduate Research Assistant
-    - RESHAPE Lab, Northern Arizona University
-    - 2021-04 to 2023-05
+  - RESHAPE Lab, Northern Arizona University
+  - 2021-04 to 2023-05
 
 ## Teaching
 
@@ -22,13 +22,15 @@ description: ""
 
 ## Education
 
--  M.Sc. Computer Science
-    - Northern Arizona University
-    - Thesis: Assessing and Designing LLM-Based Conversational Agents for Introductory Computer Science Education
+- PhD Informatics (In Progress)
+  - Northern Arizona University
+- M.Sc. Computer Science
+  - Northern Arizona University
+  - Thesis: Assessing and Designing LLM-Based Conversational Agents for Introductory Computer Science Education
 - B.S. Applied Computer Science
-    - Northern Arizona University
-    - Minors: Cybersecurity
+  - Northern Arizona University
+  - Minors: Cybersecurity
 - B.A. Comparative Cultural Studies
-    - Northern Arizona University
-    - Emphasis: Religious Studies
-    - Minors: Art History, Asian Studies
+  - Northern Arizona University
+  - Emphasis: Religious Studies
+  - Minors: Art History, Asian Studies
