@@ -36,6 +36,8 @@ description: ""
 
 ## Invited Talks
 
+- [Flagstaff Gravity Lab, April 2025 Collider](https://www.flagstaffgravity.com/event/april-collider/): "Designing Generative AI
+  Chatbots for Efficient Programming Education""
 - [Flagstaff Festival of Science](https://scifest.org/schedule-2024/): "Next-Gen Learning: How AI Transforms Education in Computer Science" (2024)
 
 ## Miscellaneous
