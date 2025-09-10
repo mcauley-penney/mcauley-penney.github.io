@@ -5,18 +5,18 @@ description: ""
 
 # Service
 
-## Program Comittee
+## Program Comittee Member (in descending chronological order)
 
 ### 2025
 
-- ACM conference on Innovation and Technology in Computer Science Education 2025
-  - Full Papers: Experience Reports & Tools
-  - Won "Outstanding Reviewer" Award
-- CompEd 2025
-  - Full Papers
-  - Posters
 - [International Workshop on Chatbot Research and Design 2025](https://2025.conversations.ws/organizers/)
   - Full Papers
+- ACM Global Computing Education Conference 2025
+  - Full Papers
+  - Posters
+- ACM Annual conference on Innovation and Technology in Computer Science Education 2025
+  - Full Papers: Experience Reports & Tools
+  - Won "Outstanding Reviewer" Award
 
 ### 2024
 
