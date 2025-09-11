@@ -25,7 +25,14 @@ All activities are presented in descending chronological order.
 - [International Workshop on Chatbot Research and Design](https://2024.conversations.ws/organizers/)
   - Full Papers
 
-## Non-Program Committee Member Reviewer
+## Invited Reviewer
+
+### 2025
+
+- International Conference on Software Engineering 2026
+  - Full Papers
+
+## Reviewer
 
 ### 2023
 
@@ -38,7 +45,7 @@ All activities are presented in descending chronological order.
 
 ## Invited Talks
 
-- Flagstaff Gravity Lab  Collider: "Designing Generative AI Chatbots for Efficient Programming Education" (April 2025)
+- Flagstaff Gravity Lab Collider: "Designing Generative AI Chatbots for Efficient Programming Education" (April 2025)
 - Flagstaff Festival of Science: "Next-Gen Learning: How AI Transforms Education in Computer Science" (2024)
 
 ## Miscellaneous
