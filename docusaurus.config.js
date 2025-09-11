@@ -60,7 +60,8 @@ const config = {
         items: [
           { to: "/career", label: "Career", position: "left" },
           { to: "/publications", label: "Publications", position: "left" },
-          { to: "/service", label: "Service", position: "left" },
+          { to: "/professional_service", label: "Professional Service", position: "left" },
+          { to: "/institutional_service", label: "Institutional Service", position: "left" },
           { to: "/awards", label: "Awards", position: "left" },
         ],
       },
