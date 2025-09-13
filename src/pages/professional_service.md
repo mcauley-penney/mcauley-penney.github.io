@@ -11,7 +11,7 @@ All activities are presented in descending chronological order.
 
 ### 2026
 
-- [International Workshop on Natural Language-based Software Engineering (NLBSE 2026)](https://nlbse2026.github.io/organisation/)
+- [International Workshop on Natural Language-based Software Engineering (**NLBSE 2026**)](https://nlbse2026.github.io/organisation/)
   - Skill Competition Organizer
 
 ## Program Committee Member
@@ -40,7 +40,7 @@ All activities are presented in descending chronological order.
 
 ### 2023
 
-- International Workshop on Chatbot Research and Design - Reviewer, Short Papers
+- International Workshop on Chatbot Research and Design (**CONVERSATIONS 2023**) - Reviewer, Short Papers
 
 ## Invited Talks & Lectures
 
