@@ -19,7 +19,7 @@ All activities are presented in descending chronological order.
 ### 2025
 
 - [International Workshop on Chatbot Research and Design (**CONVERSATIONS 2025**)](https://2025.conversations.ws/organizers/)
-  - Full Papers
+  - Short Papers
 - ACM Global Computing Education Conference (**ACM CompEd 2025**)
   - Full Papers
   - Posters
