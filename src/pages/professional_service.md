@@ -7,7 +7,7 @@ description: "Professional Service in Academia"
 
 All activities are presented in descending chronological order.
 
-## Conference Organization
+## Conference Organizer
 
 ### 2026
 
@@ -32,15 +32,15 @@ All activities are presented in descending chronological order.
 - [International Workshop on Chatbot Research and Design (**CONVERSATIONS 2024**)](https://2024.conversations.ws/organizers/)
   - Full Papers
 
-## Reviewing
+### 2023
+
+- International Workshop on Chatbot Research and Design (**CONVERSATIONS 2023**) - Reviewer, Short Papers
+
+## Invited Reviewer
 
 ### 2026
 
 - International Conference on Software Engineering (**ICSE 2026**) - Invited Reviewer, Full Papers
-
-### 2023
-
-- International Workshop on Chatbot Research and Design (**CONVERSATIONS 2023**) - Reviewer, Short Papers
 
 ## Invited Talks & Lectures
 
