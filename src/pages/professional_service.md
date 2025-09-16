@@ -15,14 +15,14 @@ All activities are presented in descending chronological order.
 
 - [International Workshop on Chatbot Research and Design (**CONVERSATIONS 2025**)](https://2025.conversations.ws/organizers/) - Short Papers
 - ACM Global Computing Education Conference (**ACM CompEd 2025**) - Full Papers, Posters
-- ACM Annual Conference on Innovation and Technology in Computer Science Education (**ACM ITiCSE 2025**) - Full Papers: Experience Reports & Tools
+- ACM Annual Conference on Innovation and Technology in Computer Science Education (**ACM ITiCSE 2025**) - Experience Reports & Tools Track
   - **Received Outstanding Reviewer Award**
 - [International Workshop on Chatbot Research and Design (**CONVERSATIONS 2024**)](https://2024.conversations.ws/organizers/) - Full Papers
 - International Workshop on Chatbot Research and Design (**CONVERSATIONS 2023**) - Short Papers
 
 ## Invited Reviewer
 
-- International Conference on Software Engineering (**ICSE 2026**) - Full Papers
+- International Conference on Software Engineering (**ICSE 2026**) - Research Track
 
 ## Invited Talks & Lectures
 
