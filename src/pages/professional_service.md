@@ -9,20 +9,19 @@ All activities are presented in descending chronological order.
 
 ## Conference Organizer
 
-- [International Workshop on Natural Language-based Software Engineering (**NLBSE 2026**)](https://nlbse2026.github.io/organisation/): Skill Competition Organizer
+- [**NLBSE 2026**](https://nlbse2026.github.io/organisation/): Skill Competition Organizer
 
 ## Program Committee Member
 
-- [International Workshop on Chatbot Research and Design (**CONVERSATIONS 2025**)](https://2025.conversations.ws/organizers/): Short Papers
-- ACM Global Computing Education Conference (**ACM CompEd 2025**): Full Papers, Posters
-- ACM Annual Conference on Innovation and Technology in Computer Science Education (**ACM ITiCSE 2025**): Experience Reports & Tools Track
-  - **Received Outstanding Reviewer Award**
-- [International Workshop on Chatbot Research and Design (**CONVERSATIONS 2024**)](https://2024.conversations.ws/organizers/): Full Papers
-- International Workshop on Chatbot Research and Design (**CONVERSATIONS 2023**): Short Papers
+- [**CONVERSATIONS 2025**](https://2025.conversations.ws/organizers/): Short Papers
+- **ACM CompEd 2025**: Full Papers, Posters
+- **ACM ITiCSE 2025**: Experience Reports & Tools Track; **Received Outstanding Reviewer Award**
+- [**CONVERSATIONS 2024**](https://2024.conversations.ws/organizers/): Full Papers
+- **CONVERSATIONS 2023**: Short Papers
 
 ## Invited Reviewer
 
-- International Conference on Software Engineering (**ICSE 2026**): Research Track
+- **ICSE 2026**: Research Track
 
 ## Invited Talks & Lectures
 
