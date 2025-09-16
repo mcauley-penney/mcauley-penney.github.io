@@ -5,7 +5,7 @@ description: ""
 
 # Publications
 
-Below are selected works of mine. Please see my CV for a comprehensive list.
+Below are selected works of mine. Please see [Google Scholar](https://scholar.google.com/citations?user=4maC0rUAAAAJ&hl=en&oi=ao) or [my CV](../../static/img/jacob-penney_cv.pdf) for a more comprehensive list.
 
 ### 2025
 
