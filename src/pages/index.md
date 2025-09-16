@@ -13,7 +13,7 @@ description: ""
 
 <br />
 
-I'm a Ph.D. student in Informatics and graduate research assistant under [Dr. Igor Steinmacher](https://scholar.google.com/citations?user=I8o8rfoAAAAJ&hl=en) and [Dr. Marco Gerosa](https://scholar.google.com/citations?user=kjtuhEQAAAAJ&hl=en) in the [RESHAPE Lab](https://www.reshapelab.site) @ Northern Arizona University. I study in the field of Human-Computer Interaction, focusing on the intersection of programming education and AI.
+I'm a Ph.D. student in Informatics and graduate research assistant under [Dr. Igor Steinmacher](https://scholar.google.com/citations?user=I8o8rfoAAAAJ&hl=en) and [Dr. Marco Gerosa](https://scholar.google.com/citations?user=kjtuhEQAAAAJ&hl=en) in the [RESHAPE Lab](https://www.reshapelab.site) @ Northern Arizona University. I study in the field of Human-Computer Interaction, focusing on the intersection of programming education and AI. I also sometimes contribute to Machine Learning research, particularly on multi‑label classifiers.
 
 <br />
 
