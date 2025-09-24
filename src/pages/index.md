@@ -1,30 +1,16 @@
 ---
-title: "Home"
+title: "About"
 description: ""
 ---
 
-<br />
+# About Me
 
-![Me, in a FITS format image](../../static/img/me_in_fits.png)
+![Me at the Grand Canyon](../../static/img/eva_grand-canyon.jpg)
 
-<br />
+Hi, I am a PhD student in Eco-Informatics at Northern Arizona University, working with Dr. Kiona Ogle. My research applies Bayesian statistical methods to model the distributions of C3 and C4 grass species and their environmental drivers across National Parks in the western United States. I am interested in how plants respond to climate stressors—particularly drought and disturbance—and how these responses scale to affect ecosystem function and inform land management.
 
-# `I'm Jacob`
+I earned my B.S. in Environmental Science with a Data Science minor from the University of Notre Dame in 2023. There, I worked with Dr. Stuart Jones on projects integrating drought-induced changes in plant water use efficiency in modeling lateral carbon transport between terrestrial and aquatic ecosystems. After graduating, I joined AmeriCorps and collaborated with the National Park Service on fire ecology research, where I developed code to analyze post-fire vegetation data and provided management recommendations for Douglas-fir populations in the Rincon Mountains of Arizona.
 
-<br />
+I am passionate about leveraging large ecological datasets, statistical modeling, and data visualization to support science-based conservation and land stewardship!
 
-I'm a Ph.D. student in Informatics and graduate research assistant under [Dr. Igor Steinmacher](https://scholar.google.com/citations?user=I8o8rfoAAAAJ&hl=en) and [Dr. Marco Gerosa](https://scholar.google.com/citations?user=kjtuhEQAAAAJ&hl=en) in the [RESHAPE Lab](https://www.reshapelab.site) @ Northern Arizona University. I study in the field of Human-Computer Interaction, focusing on the intersection of programming education and AI. I also sometimes contribute to Machine Learning research, particularly on multi‑label classifiers.
-
-<br />
-
-:::note[Find more at…]
-- [My curriculum vitae](../../static/img/jacob-penney_cv.pdf)
-- [Google Scholar](https://scholar.google.com/citations?user=4maC0rUAAAAJ&hl=en&oi=ao)
-- [ResearchGate](https://www.researchgate.net/profile/Jacob-Penney-2/research)
-- [GitHub](https://github.com/mcauley-penney)
-- [LinkedIn](https://www.linkedin.com/in/jacob-m-penney)
-:::
-
-<br />
-
-<sub>Last updated April 2025</sub>
+This is my personal website where I showcase my research, publications, and presentations. Feel free to explore my work!
