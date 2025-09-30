@@ -27,4 +27,4 @@ I'm a Ph.D. student in Informatics and graduate research assistant under [Dr. Ig
 
 <br />
 
-<sub>Last updated April 2025</sub>
+<sub>Last updated October 2025</sub>

@@ -9,6 +9,8 @@ Below are selected works of mine. Please see [Google Scholar](https://scholar.go
 
 ### 2025
 
+- _Jacob McAuley Penney_, Pawan Acharya, Peter Hilbert, Priyanka Parekh, Anita Sarma, Igor Steinmacher, Marco A. Gerosa. "Understanding Programming Students' Help-Seeking Preferences in the Era of Generative AI", `ACM Global Computing Education Conference`. https://doi.org/10.1145/3736181.3747165.
+
 - _Jacob McAuley Penney_, Pawan Acharya, Peter Hilbert, Priyanka Parekh, Anita Sarma, Igor Steinmacher, Marco A. Gerosa. "Outcomes, Perceptions, and Interaction Strategies of Novice Programmers Studying with ChatGPT", `7th ACM Conference on Conversational User Interfaces (CUI 2025)`. https://doi.org/10.1145/3719160.3736625.
 
 ### 2024

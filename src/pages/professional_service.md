@@ -25,6 +25,7 @@ All activities are presented in descending chronological order.
 
 ## Invited Talks & Lectures
 
+- **BASIS Flagstaff**: _Tech Perspectives_ Talk Series, "Artificial Intelligence, Education, and Work" _(October 2025)_
 - **Pontifical Catholic University of Rio de Janeiro**: _Generative AI and Software Engineering_ Seminar Series, "Conversational Agent Design for Programming Education" _(April 2025)_
 - **Flagstaff Gravity Lab**: _April Collider Event_, "Designing Generative AI Chatbots for Efficient Programming Education" _(April 2025)_
 - **Flagstaff Festival of Science**: "Next-Gen Learning: How AI Transforms Education in Computer Science" _(September 2024)_
