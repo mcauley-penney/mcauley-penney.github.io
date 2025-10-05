@@ -9,6 +9,8 @@ description: ""
 
 ### Northern Arizona University
 
+#### Courses I designed and Taught
+
 - Applied Generative AI in Software (CS 399)
 
 ## Research
