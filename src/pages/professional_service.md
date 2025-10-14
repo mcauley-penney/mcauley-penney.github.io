@@ -7,9 +7,13 @@ description: "Professional Service in Academia"
 
 All activities are presented in descending chronological order.
 
-## Conference Organizer
+## Organizer Positions
 
 - [**NLBSE 2026**](https://nlbse2026.github.io/organisation/): Skill Competition Organizer
+
+## Chair Positions
+
+- [**ACM CompEd 2025**](https://comped.acm.org/2025/session-chairs/): Session Chair, Session 4A: Novice Programming
 
 ## Invited Reviewer
 
