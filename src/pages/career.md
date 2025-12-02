@@ -7,11 +7,15 @@ description: ""
 
 ## Teaching
 
-### Northern Arizona University
+### Courses I Designed and Taught
 
-#### Courses I designed and Taught
+- **CS 399 - Applied Generative AI in Software**, Northern Arizona University
+  - Spring 2025
 
-- Applied Generative AI in Software (CS 399)
+### Courses I Taught
+
+- **CS 386 – Software Engineering**, Northern Arizona University
+  - Fall 2025; took over course in October and led through end of term
 
 ## Research
 
