@@ -27,6 +27,11 @@ All activities are presented in descending chronological order.
 - [**CONVERSATIONS 2024**](https://2024.conversations.ws/organizers/): Full Papers
 - **CONVERSATIONS 2023**: Short Papers
 
+## Contributed Lightning Talks
+
+- [**AIware Leadership Bootcamp 2024**](https://www.aiwarebootcamp.io/aiware-leadership-bootcamp-2024) - "AI Literacy and Perceptions of Digital Tutors among Novice Programming Students"
+- [**FM+SE School 2023**](https://fmse.io/school/index.html) - "Instructors want LLM-based Chatbots that Teach Algorithmic Thinking by Scaffolding!"
+
 ## Invited Lectures
 
 - **Pontifical Catholic University of Rio de Janeiro**: _Generative AI and Software Engineering_ Seminar Series, "Conversational Agent Design for Programming Education" _(April 2025)_
