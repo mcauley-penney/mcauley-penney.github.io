@@ -9,13 +9,15 @@ description: ""
 
 ### Courses I Designed and Taught
 
+- **CS 499 - Scientific Evaluation of LLM Applications**, Northern Arizona University
+  - Spring 2026
+  - Co-designed and co-taught
+- **CS 386 – Software Engineering**, Northern Arizona University
+  - Fall 2025
+  - took over course in October and led through end of term in December
 - **CS 399 - Applied Generative AI in Software**, Northern Arizona University
   - Spring 2025
-
-### Courses I Taught
-
-- **CS 386 – Software Engineering**, Northern Arizona University
-  - Fall 2025; took over course in October and led through end of term
+  - Designed and taught
 
 ## Research
 

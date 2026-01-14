@@ -15,17 +15,23 @@ All activities are presented in descending chronological order.
 
 - [**ACM CompEd 2025**](https://comped.acm.org/2025/session-chairs/): Session Chair, Session 4A: Novice Programming
 
-## Invited Reviewer
+## Program Committee Service
 
-- **ICSE 2026**: Research Track
+### Senior Program Committee Member
 
-## Program Committee Member
+- **ACM ITiCSE 2026**: Experience Reports & Tools Track
+
+### Program Committee Member
 
 - [**CONVERSATIONS 2025**](https://2025.conversations.ws/organizers/): Short Papers
 - **ACM CompEd 2025**: Full Papers, Posters
 - **ACM ITiCSE 2025**: Experience Reports & Tools Track; **Received Outstanding Reviewer Award**
 - [**CONVERSATIONS 2024**](https://2024.conversations.ws/organizers/): Full Papers
 - **CONVERSATIONS 2023**: Short Papers
+
+## Invited Reviewer
+
+- **ICSE 2026**: Research Track
 
 ## Contributed Lightning Talks
 
