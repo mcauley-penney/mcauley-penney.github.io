@@ -5,8 +5,6 @@ description: "Professional Service in Academia"
 
 # Professional Service
 
-All activities are presented in descending chronological order.
-
 ## Organizer Positions
 
 - [**NLBSE 2026**](https://nlbse2026.github.io/organisation/): Skill Competition Organizer
@@ -29,7 +27,11 @@ All activities are presented in descending chronological order.
 - [**CONVERSATIONS 2024**](https://2024.conversations.ws/organizers/): Full Papers
 - **CONVERSATIONS 2023**: Short Papers
 
-## Invited Reviewer
+## Invited Journal Reviewer
+
+- **ACM Transactions on Software Engineering and Methodology (TOSEM) 2026**
+
+## Invited Conference Reviewer
 
 - **ICSE 2026**: Research Track
 
