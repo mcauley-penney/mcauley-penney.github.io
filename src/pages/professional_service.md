@@ -21,15 +21,12 @@ description: "Professional Service in Academia"
 
 ### Program Committee Member
 
+- **ACM ITiCSE 2026**: Posters Track
 - [**CONVERSATIONS 2025**](https://2025.conversations.ws/organizers/): Short Papers
 - **ACM CompEd 2025**: Full Papers, Posters
 - **ACM ITiCSE 2025**: Experience Reports & Tools Track; **Received Outstanding Reviewer Award**
 - [**CONVERSATIONS 2024**](https://2024.conversations.ws/organizers/): Full Papers
 - **CONVERSATIONS 2023**: Short Papers
-
-## Invited Journal Reviewer
-
-- **ACM Transactions on Software Engineering and Methodology (TOSEM) 2026**
 
 ## Invited Conference Reviewer
 
@@ -52,4 +49,4 @@ description: "Professional Service in Academia"
 
 ## Community Outreach
 
-- [Ponderosa Hacks](https://ponderosa-hacks.com/#About) - Participant Mentor and Project Judge _(October 2024)_
+- [**Ponderosa Hacks**](https://ponderosa-hacks.com/#About) - Participant Mentor and Project Judge _(October 2024)_
