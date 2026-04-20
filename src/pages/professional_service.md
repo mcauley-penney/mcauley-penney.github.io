@@ -47,6 +47,10 @@ description: "Professional Service in Academia"
 - **Flagstaff Gravity Lab**: _April Collider Event_, "Designing Generative AI Chatbots for Efficient Programming Education" _(April 2025)_
 - **Flagstaff Festival of Science**: "Next-Gen Learning: How AI Transforms Education in Computer Science" _(September 2024)_
 
+## Student Volunteering
+
+- **ACM ICSME 2024**
+
 ## Community Outreach
 
 - [**Ponderosa Hacks**](https://ponderosa-hacks.com/#About) - Participant Mentor and Project Judge _(October 2024)_
